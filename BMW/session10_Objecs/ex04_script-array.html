@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script>
+    var days = ["t2", "t3", "t4"];
+    with(document){
+    document.write("<h3>Method</h3>");
+    document.write(days.join(" - "));
+    document.write("<p>");
+
+    days.push("t4", "t5", "t6", "t7", "CN");
+    document.write(days.join(" - "));
+    document.write("<hr align='left' width='30%'>");
+    document.write("VONG LAP");
+    write("<pre>");
+    for (var i = 0; i < days.length; i++) {
+      writeln(days[i]);
+    }
+    write("</pre>");
+    // ---
+    document.write("VONG LAP 2");
+    write("<pre>");
+    for (var ngay in days) {
+      writeln(days[ngay] + "<br>");
+    }
+    write("</pre>");
+}
+  </script>
+</head>
+<body></body>
+</html>

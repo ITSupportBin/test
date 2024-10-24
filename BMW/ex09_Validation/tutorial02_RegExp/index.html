@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+    //   function kiemTra() {
+        const kiemtra = () => {
+        var sName = document.getElementById("txtName").value;
+        var reName = /^\w+[.]\d+[.]\w+$/;
+
+        if (!reName.test(sName)) {
+          alert("Sai rồi!");
+          document.getElementById("txtName").value = "";
+          document.getElementById("txtName").focus();
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+        Class Name: <input type="text" id="txtName"><br>
+        <button onclick="return kiemtra();">Create new Class</button>
+    </form>
+  </body>
+</html>
